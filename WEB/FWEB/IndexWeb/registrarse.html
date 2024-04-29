@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre1">Primer nombre</label>
+                <input type="text" id="nombre1" name="nombre1" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre2">Segundo nombre</label>
+                <input type="text" id="nombre2" name="nombre2">
+            </div>
+            <div class="form-group">
+                <label for="apellido1">Primer apellido</label>
+                <input type="text" id="apellido1" name="apellido1" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido2">Segundo apellido</label>
+                <input type="text" id="apellido2" name="apellido2">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Celular</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="codigo">Código de Verificación</label>
+                <input type="text" id="codigo" name="codigo" required>
+            </div>
+            <button type="submit" class="btn-submit">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+<style>
+body {
+    background-image: url(assets/img/Imagenes_index/Bussines.avif); /* Ruta de tu imagen */
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-position: center; /* Para centrar la imagen en el fondo */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #000000b0;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 80%;
+    height: 90%;
+    
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #52D3D8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 95%;
+}
+/*titulos*/
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #52D3D8;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #00000098;
+    border-radius: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus{
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-submit {
+    display: block;
+    width: 50%;
+    padding: 12px;
+    background-color: #868686;
+    color: #000000f0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.btn-submit:hover {
+    background-color: #52D3D8;
+}
+
+.error-message {
+    color: #dc1d30;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.success-message {
+    color: #28a745;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+</style>

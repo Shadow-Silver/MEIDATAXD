@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="GALERIA/FOTOS/LOGO CCC.png">
+    <title>Iniciemos</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <SCRIPT  language=JavaScript> 
+        function go(){
+        
+        if (document.form.password.value=='12345' && document.form.login.value=='ADMON'){ 
+                document.form.submit(); 
+            } 
+            else{ 
+                 alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+            } 
+        } 
+        </SCRIPT> 
+    <div class="login-container">
+        <div class="logo"> 
+            <img src="Galeria/MEIDATA.png" alt="calzado calidad">
+        </div>
+       
+        <form name=form action="http://127.0.0.1:5500/VSC/INICIO.HTML#">
+            <div class="form-group">
+                <div class="input-icon">
+                    <img src="" alt="Icono de Usuario">
+                </div>
+                <input type="text" id="login" name="login" placeholder="Usuario" required>
+            </div>
+            <div class="form-group">
+                <div class="input-icon">
+                    <img src="GALERIA/ICONOS/lock-alt-solid-24.png" alt="Icono de Contraseña">
+                </div>
+                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+            </div>
+            <INPUT class="btn-login" onclick=go() type=button value=INICIAR>
+        </form>
+    </div>
+</body>
+</html>
