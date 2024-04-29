@@ -1,0 +1,115 @@
+
+/*----------  login Styles  ----------*/
+.login-container {
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-image: url("../img/imag/PORTADA\ SESION.jpg");
+	background-size: cover;
+    background-position: center center;
+    background-attachment:scroll ;
+}
+
+
+.login-content {
+ 
+   margin: 30px;
+   padding: 60px;
+    background-color: #0000007d; /* Cambiar el color de fondo y la opacidad */
+    border-radius: 20px;
+	width: 360px;
+	height: 450px;
+    text-align: center;
+}
+.logo {
+    margin-top: -70px; /* Reducir el espacio superior */
+    padding: -50px;
+    text-align: center;
+    width: 250px;
+}
+.logo img {
+    width: 200px; /* Define el ancho deseado del icono */
+    height: auto; /* Mantiene la proporción del icono */
+	margin-bottom: 0px; /* Reducir el espacio inferior */
+}
+.input-group {
+	background-color: #ffffff; 
+	border-radius: 20px 5px 5px 20px;
+	margin-top: -30px; /* Reducir el espacio superior */
+    padding: -10px;
+	width: 250px;
+}
+
+
+.input-group-text img {
+    width: 30px; /* Tamaño del icono */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 40px; /* Espaciado entre campos */
+}
+
+.form-group label {
+    color: #f7f7f7; /* Cambiar color del texto a blanco */
+}
+
+/* Placeholder para el campo de usuario */
+#UserName::placeholder {
+    color: #7d7d7d; /* Cambia el color del placeholder según tu preferencia */
+}
+
+/* Placeholder para el campo de contraseña */
+#UserPassword::placeholder {
+    color: #7d7d7d; /* Cambia el color del placeholder según tu preferencia */
+}
+/* Estilo personalizado para el botón de inicio de sesión */
+.custom-btn-login {
+    width: 60%; /* Ocupar todo el ancho del contenedor */
+    height: 30px;
+    border-radius: 9px;
+    background-color: #ffffff; /* Fondo primario en rosa */
+    border: none;
+    color: #18d9ee; /* Color de texto en amarillo */
+    transition: background-color 0.3s ease;
+    display: block; /* Convertir en elemento de bloque */
+    margin: 10px auto; /* Centrar horizontalmente con márgenes automáticos */
+}
+.forget-pasw {
+    text-align: center; /* Alinear el texto al centro */
+	padding: 10px 0px 10px 0px  ;
+}
+.new-reg {
+    text-align: center; /* Alinear el texto al centro */
+	padding: 10px 0px 10px 0px  ;
+    color: #ffffff;
+}
+
+.custom-btn-login:hover {
+    background-color: #18d9ee; /* Cambiar color de fondo al pasar el mouse a amarillo */
+    color: #ffffff; /* Cambiar color de texto al pasar el mouse a rosa */
+}
+
+.custom-btn-login:active,
+.custom-btn-login:focus {
+    outline: none;
+}
+.forget-pasw a {
+    color: #ffffff; /* Color azul claro para el enlace */
+   
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.forget-pasw a:hover {
+    color: #18d9ee; /* Cambiar color del enlace al pasar el mouse */
+}
+.new-reg a {
+    color: #18d9ee; /* Color azul claro para el enlace */
+}
+
+

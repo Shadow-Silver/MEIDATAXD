@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="img/icons/ICONO_CLARO.png">
+
+    <!-- Normalize V8.0.1 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- Bootstrap Material Design V4.0 -centra-->
+    <link rel="stylesheet" href="./css/bootstrap-material-design.min.css">
+
+    <!-- General Styles -->
+    <link rel="stylesheet" href="./css/Stylelo.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-bg"></div> <!-- Este div es para el fondo difuminado -->
+        <div class="login-content">
+            <div class="logo"> 
+                <img src="img/icons/ICONO_CLARO.png" alt="logo login">
+            </div>
+            <form action="" method="POST" autocomplete="off">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="img/icons/log_user.png" alt="Usuario"></span>
+                        </div>
+                        <input type="text" class="form-control" id="UserName" name="usuario" placeholder="  Usuario" required="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><img src="img/icons/log_pass.png" alt="Contraseña"></span>
+                        </div>
+                        <input type="password" class="form-control" id="UserPassword" name="clave" placeholder="  Contraseña" required="">
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="RememberMe">
+                    <label class="form-check-label" for="RememberMe">Recordar</label>
+                </div>
+                <button type="submit" id="loginBtn" class="custom-btn-login btn-block">Iniciar sesión</button>
+                <p class="forget-pasw">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </p>
+                <div class="login-container-out">
+                    <div class="new-reg">
+                        <p>¿Nuevo aquí? <a href="registro.html">Regístrate</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <!-- Include JavaScript files -->
+    <!-- jQuery V3.4.1 -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+    <!-- popper -->
+    <script src="./js/popper.min.js"></script>
+
+    <!-- Bootstrap V4.3 -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- jQuery Custom Content Scroller V3.1.5 -->
+    <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Bootstrap Material Design V4.0 -->
+    <script src="./js/bootstrap-material-design.min.js"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
